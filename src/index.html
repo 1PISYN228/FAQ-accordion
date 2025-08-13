@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | FAQ accordion</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../font/fonts.css">
+    <script src="../src/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="sm:bg-[url('../assets/images/background-pattern-desktop.svg')] bg-[url('../assets/images/background-pattern-mobile.svg')] pt-[350px] ">
+        </div>
+        <article class="bg-[hsl(273,15%,88%)] py-[450px] flex justify-center relative p-5">
+            <article class="bg-white p-5 md:p-10 absolute top-[-170px] rounded-3xl grid gap-8 w-[330px] sm:w-[550px] md:w-[700px] lg:w-[810px]">
+                <div class="flex items-center gap-5">
+                    <img src="../assets/images/icon-star.svg" alt="icon-star">
+                    <h1 class="text-[clamp(2.5rem,3.5vw,10rem)] text-[hsl(292,42%,14%)] font-bold">FAQs</h1>
+                </div>
+                <section class="grid gap-5">   
+                    <button class="flex items-center justify-between cursor-pointer" data-js-question aria-controls="a1">
+                        <span class="text-[clamp(1.2rem,1.2vw,10rem)] text-[hsl(292,42%,14%)] font-semibold text-start 
+                        hover:text-[hsl(294,77%,49%)] duration-300 ease-in-out">
+                            What is Frontend Mentor, and how will it help me?
+                        </span>
+                        <img src="../assets/images/icon-plus.svg" alt="icon-plus" data-js-image>
+                        <img src="../assets/images/icon-minus.svg" alt="icon-minus" class="hidden" data-js-image-minus>
+                    </button>
+                    <div data-js-answer class="hidden" id="a1">
+                        <p class="text-[clamp(1rem,0.95vw,10rem)] text-[hsl(292,16%,49%)]">
+                            Frontend Mentor offers realistic coding challenges to help developers improve their<br class="hidden md:block">
+                            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all<br class="hidden md:block"> 
+                            levels and ideal for portfolio building.
+                        </p>
+                    </div>
+
+                    <button class="flex items-center justify-between cursor-pointer" data-js-question aria-controls="a2">
+                        <span class="text-[clamp(1.2rem,1.2vw,10rem)] text-[hsl(292,42%,14%)] font-semibold 
+                        hover:text-[hsl(294,77%,49%)] duration-300 ease-in-out">
+                            Is Frontend Mentor free?
+                        </span>
+                        <img src="../assets/images/icon-plus.svg" alt="icon-plus" data-js-image>
+                        <img src="../assets/images/icon-minus.svg" alt="icon-minus" class="hidden" data-js-image-minus>
+                    </button>
+                    <div data-js-answer class="hidden" id="a2">
+                        <p class="text-[clamp(1rem,0.95vw,10rem)] text-[hsl(292,16%,49%)]">
+                            Yes, Frontend Mentor offers both free and premium coding challenges, with the free<br class="hidden md:block">
+  option providing access to a range of projects suitable for all skill levels.</p>
+                    </div>
+                    
+                    <button class="flex items-center justify-between cursor-pointer" data-js-question aria-controls="a3">
+                        <span class="text-[clamp(1.2rem,1.2vw,10rem)] text-[hsl(292,42%,14%)] font-semibold text-start 
+                        hover:text-[hsl(294,77%,49%)] duration-300 ease-in-out">
+                            Can I use Frontend Mentor projects in my portfolio?
+                        </span>
+                        <img src="../assets/images/icon-plus.svg" alt="icon-plus" data-js-image>
+                        <img src="../assets/images/icon-minus.svg" alt="icon-minus" class="hidden" data-js-image-minus>
+                    </button>                  
+                    <div data-js-answer class="hidden" id="a3">
+                        <p class="text-[clamp(1rem,0.95vw,10rem)] text-[hsl(292,16%,49%)]">
+                            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent<br class="hidden md:block">
+  way to showcase your skills to potential employers!
+                        </p>
+                    </div>
+                    
+
+                    <button class="flex items-center justify-between cursor-pointer" data-js-question aria-controls="a4">
+                        <span class="text-[clamp(1.2rem,1.2vw,10rem)] text-[hsl(292,42%,14%)] font-semibold text-start 
+                        hover:text-[hsl(294,77%,49%)] duration-300 ease-in-out">
+                            How can I get help if I'm stuck on a Frontend Mentor challenge?
+                        </span>
+                        <img src="../assets/images/icon-plus.svg" alt="icon-plus" data-js-image>
+                        <img src="../assets/images/icon-minus.svg" alt="icon-minus" class="hidden" data-js-image-minus>
+                    </button>
+                    <div data-js-answer class="hidden" id="a4">
+                        <p class="text-[clamp(1rem,0.95vw,10rem)] text-[hsl(292,16%,49%)]">
+                            The best place to get help is inside Frontend Mentor's Discord community. There's a help<br class="hidden md:block">
+  channel where you can ask questions and seek support from other community members.
+                        </p>
+                    </div>
+                </section>
+            </article>
+        </article>
+    </main>
+</body>
+</html>
